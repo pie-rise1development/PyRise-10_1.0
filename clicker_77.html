@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise1-Clicker</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            transition: background-color 0.5s;
+        }
+        #clickButton {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Rise1-Clicker!</h1>
+    <button id="clickButton">Жмякать...</button>
+    <h2>Счётчик кликов: <span id="clickCount">0</span></h2>
+
+    <script>
+        let clickCount = 0;
+
+        const button = document.getElementById('clickButton');
+        const countDisplay = document.getElementById('clickCount');
+
+        button.addEventListener('click', () => {
+            clickCount++;
+            countDisplay.textContent = clickCount;
+
+            // Случайный цвет фона.
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
+
+
+</body>
+</html>
