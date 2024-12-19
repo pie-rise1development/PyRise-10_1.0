@@ -12,4 +12,4 @@ async def on_ready():
 async def piroschock(ctx): #/piroschock
     await ctx.send("Приветствую! Я ассистент создателя данного сервера на платформе Discord, бот...")
 
-bot.run("MTI3NTQ3NzYzOTI1MTEwMzc3NQ.GjU9Gp.U0euVFwn9YzXvh4rQvSjh2IKzcGMXzbDkc9c1I")
+bot.run("")
